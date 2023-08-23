@@ -1013,6 +1013,7 @@ case $choice in
       fi
 
       cd /home/web && docker-compose up -d
+      #修改mysql别名，方便利用后来的脚本
       docker tag ibmcom/mysql-s390x:5.7.34 mysql:5.7.42
       docker exec php apt update &&
       docker exec php apt install -y libmariadb-dev-compat libmariadb-dev libzip-dev libmagickwand-dev imagemagick &&
