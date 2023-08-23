@@ -995,7 +995,9 @@ case $choice in
       wget -O /home/web/docker-compose.yml https://raw.githubusercontent.com/kejilion/docker/main/LNMP-docker-compose-4.yml
 
       # 在 docker-compose.yml 文件中进行替换
-      sed -i "s/webroot/$dbrootpasswd/g" /home/web/docker-compose.yml
+      # sed -i "s/webroot/$dbrootpasswd/g" /home/web/docker-compose.yml
+      # 进行特殊字符的处理并替换脚本中的变量
+      sed -i "s/webroot/$(echo "$$dbrootpasswd" | sed 's/[\/&]/\\&/g')/g" ./docker-compose.yml
       sed -i "s/kejilionYYDS/$dbusepasswd/g" /home/web/docker-compose.yml
       sed -i "s/kejilion/$dbuse/g" /home/web/docker-compose.yml
       sed -i 's/image: mysql/image: ibmcom\/mysql-s390x:5.7.34/g' /home/web/docker-compose.yml
