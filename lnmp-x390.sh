@@ -1013,7 +1013,7 @@ case $choice in
       fi
 
       cd /home/web && docker-compose up -d
-
+      docker tag ibmcom/mysql-s390x:5.7.34 mysql:5.7.42
       docker exec php apt update &&
       docker exec php apt install -y libmariadb-dev-compat libmariadb-dev libzip-dev libmagickwand-dev imagemagick &&
       docker exec php docker-php-ext-install mysqli pdo_mysql zip exif gd intl bcmath opcache &&
