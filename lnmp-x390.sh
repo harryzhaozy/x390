@@ -985,7 +985,9 @@ case $choice in
 
       # 安装 Docker Compose
       # curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
-
+      # 使用X390的docker-compose
+      curl -L "https://raw.githubusercontent.com/harryzhaozy/x390/main/docker-compose" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
+      
       # 创建必要的目录和文件
       cd /home && mkdir -p web/html web/mysql web/certs web/conf.d web/redis && touch web/docker-compose.yml
 
