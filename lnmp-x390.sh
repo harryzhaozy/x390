@@ -998,7 +998,8 @@ case $choice in
       # sed -i "s/webroot/$dbrootpasswd/g" /home/web/docker-compose.yml
       # 进行特殊字符的处理并替换脚本中的变量
       sed -i "s/webroot/$(echo "$$dbrootpasswd" | sed 's/[\/&]/\\&/g')/g" ./docker-compose.yml
-      sed -i "s/kejilionYYDS/$dbusepasswd/g" /home/web/docker-compose.yml
+      sed -i "s/kejilionYYDS/$(echo "$$dbusepasswd" | sed 's/[\/&]/\\&/g')/g" /home/web/docker-compose.yml
+      
       sed -i "s/kejilion/$dbuse/g" /home/web/docker-compose.yml
       sed -i 's/image: mysql/image: ibmcom\/mysql-s390x:5.7.34/g' /home/web/docker-compose.yml
 
