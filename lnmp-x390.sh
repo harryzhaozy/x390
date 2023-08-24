@@ -1771,7 +1771,7 @@ case $choice in
         ;;
 
     0)
-    /root/lnmp-x390.sh
+    ./lnmp-x390.sh
     exit
       ;;
 
