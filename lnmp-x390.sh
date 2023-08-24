@@ -1771,7 +1771,7 @@ case $choice in
         ;;
 
     0)
-    /root/kejilion.sh
+    /root/lnmp-x390.sh
     exit
       ;;
 
