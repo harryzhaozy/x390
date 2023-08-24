@@ -331,7 +331,7 @@ case $choice in
               ;;
 
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
 
@@ -682,7 +682,7 @@ case $choice in
               esac
               ;;
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
           *)
@@ -770,7 +770,7 @@ case $choice in
               wget -qO- bench.sh | bash
               ;;
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
           *)
@@ -910,7 +910,7 @@ case $choice in
           esac
               ;;
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
           *)
@@ -1771,7 +1771,7 @@ case $choice in
         ;;
 
     0)
-    ./lnmp-x390.sh
+    /root/lnmp-x390.sh
     exit
       ;;
 
@@ -2868,7 +2868,7 @@ case $choice in
               ;;
 
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
           *)
@@ -3003,7 +3003,7 @@ case $choice in
               tmux list-sessions
               ;;
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
           *)
@@ -3418,7 +3418,7 @@ case $choice in
               ;;
 
           0)
-              /root/kejilion.sh
+              /root/lnmp-x390.sh
               exit
               ;;
           *)
